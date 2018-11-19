@@ -1,0 +1,21 @@
+sudo: required
+
+services:
+  - docker
+
+language: java
+dist: trusty
+
+jdk:
+- openjdk11
+
+cache:
+  directories:
+  - $HOME/.m2
+
+script:
+  - mvn clean package -U
+  - docker build -t gsas/bill:latest .
+after_success:
+  - docker login -u="$ACCOUNT" -p="$PASSWORD"
+  - docker push gsas/bill:latest
