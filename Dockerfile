@@ -1,11 +1,11 @@
-FROM openjdk:11-jre-slim
+FROM openjdk:8-jre-slim
 
 RUN mkdir /app
 
 WORKDIR /app
 
-ADD ./api/target/api-1.0-SNAPSHOT.jar /app
+ADD ./api/target/bills-api-1.0-SNAPSHOT.jar /app
 
-EXPOSE 8083
+EXPOSE 8086
 
-CMD java -jar api-1.0-SNAPSHOT.jar
+CMD java -jar bills-api-1.0-SNAPSHOT.jar

@@ -1,21 +1,22 @@
 sudo: required
 
 services:
-  - docker
+- docker
 
 language: java
 dist: trusty
 
 jdk:
-- openjdk11
+- openjdk8
 
 cache:
   directories:
   - $HOME/.m2
 
 script:
-  - mvn clean package -U
-  - docker build -t gsas/bill:latest .
+- mvn clean package -U
+- docker build -t gsas/rso-queues:latest .
+
 after_success:
-  - docker login -u="$ACCOUNT" -p="$PASSWORD"
-  - docker push gsas/bill:latest
+- docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+- docker push gsas/rso-queues:latest

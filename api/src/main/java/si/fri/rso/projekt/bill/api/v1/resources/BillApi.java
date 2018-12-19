@@ -1,38 +1,33 @@
 package si.fri.rso.projekt.bill.api.v1.resources;
 
 import si.fri.rso.projekt.bill.services.beans.BillBean;
+import si.fri.rso.projekt.bill.models.Bill;
 
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.ws.rs.*;
+import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 @RequestScoped
-@Path("bill")
+@Path("bills")
 public class BillApi {
 
     @Inject
     private BillBean billBean;
 
-    @GET
-    @Produces("text/plain")
-    public String hello() {
-        return "Hello from kumuluze. its working!";
-    }
+
+    //@GET
+    //@Path("url")
+    //public Response test() {
+    //    return Response.status(Response.Status.OK).entity(billBean.getMessageDiscovery()).build();
+    //
+    //}
 
     @GET
-    @Path("discovery")
-    public Response disc() {
-
-        String returnMsg = billBean.getMessage();
-        return Response.status(Response.Status.OK).entity(returnMsg).build();
-    }
-
-    @GET
-    @Path("url")
-    public Response test() {
-        String response = billBean.getMessageDiscovery();
-        return Response.status(Response.Status.OK).entity(response).build();
+    @Path("url2")
+    public Response test2() {
+        return Response.status(Response.Status.OK).entity(billBean.getMessageDiscovery2()).build();
 
     }
 
@@ -56,5 +51,26 @@ public class BillApi {
         billBean.setConfig(true);
         String response = "OK";
         return Response.status(Response.Status.OK).entity(response).build();
+    }
+
+
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getOrders() {
+        return Response.ok(billBean.getBills()).build();
+    }
+
+    @GET
+    @Path("/{billID}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getOrdersbyID(@PathParam("billID") Integer billID) {
+        Bill bill = billBean.getBill(billID);
+
+        if(bill != null) {
+            return Response.ok(bill).build();
+        }
+        else {
+            return Response.status(Response.Status.NOT_FOUND).build();
+        }
     }
 }

@@ -7,15 +7,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="api" />
-        <module name="model" />
+        <module name="bills-api" />
+        <module name="bills-models" />
+        <module name="bills-services" />
+        <module name="models" />
         <module name="services" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="api" target="1.8" />
-      <module name="bill" target="1.8" />
-      <module name="model" target="1.8" />
-      <module name="services" target="1.8" />
+      <module name="model" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
