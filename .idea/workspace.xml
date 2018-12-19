@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cabd431c-22b0-4a32-9b53-d8e8d0d5e196" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_enterprise_cdi_api_2_0_SP1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/api.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/si/fri/rso/projekt/bill/api/v1/resources/BillApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/si/fri/rso/projekt/bill/api/v1/resources/BillApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/resources/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bill.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/model.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/services/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/services.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/src/main/java/si/fri/rso/projekt/bill/services/beans/BillBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/src/main/java/si/fri/rso/projekt/bill/services/beans/BillBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/src/main/java/si/fri/rso/projekt/bill/services/configuration/AppProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/services/src/main/java/si/fri/rso/projekt/bill/services/configuration/AppProperties.java" afterDir="false" />
-    </list>
+    <list default="true" id="cabd431c-22b0-4a32-9b53-d8e8d0d5e196" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/api/target/" />
@@ -439,7 +417,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="78" />
     <option name="y" value="22" />
     <option name="width" value="1784" />
@@ -610,7 +588,7 @@
     <property name="SearchEverywhereHistoryKey" value="buyer&#9;PSI&#9;JAVA://si.fri.rso.projekt.orders.api.v1.resources.OrdersResources#getBuyers" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545210507020" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545211166502" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -726,7 +704,7 @@
       <workItem from="1545200625812" duration="295000" />
       <workItem from="1545201042029" duration="1118000" />
       <workItem from="1545202578352" duration="3147000" />
-      <workItem from="1545208903466" duration="1590000" />
+      <workItem from="1545208903466" duration="2452000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1542633110803</created>
@@ -970,7 +948,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58953000" />
+    <option name="totallyTimeSpent" value="59815000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -982,10 +960,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="78" y="22" width="1784" height="1000" extended-state="0" />
+    <frame x="78" y="22" width="1784" height="1000" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22041763" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22041763" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
