@@ -61,10 +61,10 @@ public class BillApi {
     }
 
     @GET
-    @Path("/{billID}")
+    @Path("/{orderID}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getOrdersbyID(@PathParam("billID") Integer billID) {
-        Bill bill = billBean.getBill(billID);
+    public Response getOrdersbyID(@PathParam("orderID") Integer orderID) {
+        Bill bill = billBean.getBill(orderID);
 
         if(bill != null) {
             return Response.ok(bill).build();

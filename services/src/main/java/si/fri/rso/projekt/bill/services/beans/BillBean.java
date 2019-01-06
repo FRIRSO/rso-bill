@@ -102,12 +102,12 @@ public class BillBean {
         return mb.getAllBills();
     }
 
-    public Bill getBill(Integer billID) {
+    public Bill getBill(Integer orderID) {
         MongoBill mb = new MongoBill();
 
-        Bill bill = mb.getQueue(billID);
+        Bill bill = mb.getBill(orderID);
 
-        if(billID == null) {
+        if(orderID == null) {
             return null;
         }
 

@@ -50,12 +50,12 @@ public class MongoBill {
         return results;
     }
 
-    public Bill getQueue(Integer queueID) {
+    public Bill getBill(Integer orderID) {
         MongoClient client = connectDB();
         MongoDatabase db = client.getDatabase(DBName);
         MongoCollection<Document> bc = db.getCollection(DBCollection);
 
-        Bson filter = Filters.eq("delivererID", queueID);
+        Bson filter = Filters.eq("orderID", orderID);
 
         Document result = bc.find(filter).first();
 
