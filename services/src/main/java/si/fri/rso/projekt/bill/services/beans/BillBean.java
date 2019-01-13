@@ -123,4 +123,10 @@ public class BillBean {
 
         return bill.isPaid();
     }
+
+    public void updatePaid(Integer orderID) {
+        MongoBill mb = new MongoBill();
+
+        mb.updatePaidStatus(orderID);
+    }
 }

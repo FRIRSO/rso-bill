@@ -82,4 +82,16 @@ public class BillApi {
 
         return Response.ok(isPaid).build();
     }
+
+    @GET
+    @Path("/setPaid/{orderID}")
+    public Response setPaidStatus(@PathParam("orderID") Integer orderID) {
+        try {
+            billBean.updatePaid(orderID);
+        }catch(Exception e) {
+            return Response.status(Response.Status.CONFLICT).build();
+        }
+
+        return Response.status(Response.Status.OK).build();
+    }
 }

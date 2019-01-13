@@ -1,5 +1,6 @@
 package si.fri.rso.projekt.bill.models;
 
+import com.mongodb.BasicDBObject;
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;
 import com.mongodb.client.MongoCollection;
@@ -69,5 +70,21 @@ public class MongoBill {
                 result.getDouble("price"),
                 result.getString("date"),
                 result.getBoolean("paid"));
+    }
+
+    public void updatePaidStatus(Integer orderID) {
+        MongoClient client = connectDB();
+        MongoDatabase db = client.getDatabase(DBName);
+        MongoCollection<Document> bc = db.getCollection(DBCollection);
+
+//        Bill bill =  getBill(orderID);
+
+
+        BasicDBObject doc = new BasicDBObject();
+        doc.append("$set", new BasicDBObject().append("paid", true));
+
+        BasicDBObject filter = new BasicDBObject().append("orderID", orderID);
+
+        bc.updateOne(filter, doc);
     }
 }
