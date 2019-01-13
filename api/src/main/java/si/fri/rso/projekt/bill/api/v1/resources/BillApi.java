@@ -73,4 +73,13 @@ public class BillApi {
             return Response.status(Response.Status.NOT_FOUND).build();
         }
     }
+
+    @GET
+    @Path("/paid/{orderID}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getPaidStatus(@PathParam("orderID") Integer orderID) {
+        boolean isPaid = billBean.getPaidStatus(orderID);
+
+        return Response.ok(isPaid).build();
+    }
 }

@@ -113,4 +113,14 @@ public class BillBean {
 
         return bill;
     }
+
+    public boolean getPaidStatus(Integer orderID) {
+        Bill bill = getBill(orderID);
+
+        if(bill == null) {
+            return false;
+        }
+
+        return bill.isPaid();
+    }
 }
